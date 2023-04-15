@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<head>
+				<!-- Linking the css file -->
+  <link rel="stylesheet" href="FDashboard.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li class="nav-links">
+          <a href="#" class="active">
+            <span class="icon"><i class='bx bxs-dashboard'></i></span>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-links">
+          <a href="#" class="active">
+            <span class="icon"><i class='bx bxs-home'></i></span>
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li class="nav-links">
+          <a href="#">
+            <span class="icon"><i class='bx bxs-user-detail'></i></span>
+            <span class="links_name">About Us</span>
+          </a>
+        </li>
+        <li class="nav-links">
+          <a href="#">
+            <span class="icon"><i class='bx bx-log-in'></i></span>
+            <span class="links_name">Students Login</span>
+          </a>
+        </li>
+        <li class="nav-links">
+          <a href="#">
+            <span class="icon"><i class='bx bx-log-in'></i></span>
+            <span class="links_name">Faculty login</span>
+          </a>
+        </li>
+        <li class="nav-links log_out">
+          <a href="#">
+            <span class="icon"><i class='bx bx-log-out'></i></span>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class='bx bx-menu sidebarBtn'></i>
+          <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search...">
+          <i class='bx bx-search'></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total number of students</div>
+              <div class="number">60</div>
+              <div class="indicator">
+                <i class='bx bx-id-card'></i>
+                <span class="text">From CSE 3D</span>
+              </div>
+            </div>
+            <i class='bx bxs-group icon one'></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total number of projects</div>
+              <div class="number">17</div>
+              <div class="indicator">
+                <i class='bx bx-user-plus'></i>
+                <span class="text">2 to 4 students per team</span>
+              </div>
+            </div>
+            <i class='bx bxs-book-content icon two'></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Number of projects completed</div>
+              <div class="number">11</div>
+              <div class="indicator">
+                <i class='bx bx-check-circle'></i>
+                <span class="text">Submission and reviewed by instructor</span>
+              </div>
+            </div>
+            <i class='bx bxs-badge-check icon three'></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Number of pending projects</div>
+              <div class="number">6</div>
+              <div class="indicator">
+                <i class='bx bxs-shield-x'></i>
+                <span class="text">Submitted yet to be reviewed</span>
+              </div>
+            </div>
+            <i class='bx bxs-x-square icon four'></i>
+          </div>
+        </div>
+
+        <!-- Add charts -->
+        <div class="graphBox">
+          <div class="box"> <canvas id="myChart"></canvas>
+          </div>
+          <div class="box box1"> <canvas id="performance"></canvas> </div>
+        </div>
+
+        <!-- Details -->
+        <div class="details">
+          <div class="tableDetails teamDetails">
+            <div class="cardHeader">
+              <h2>Team Details</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <div class="detail">
+              <table>
+                <thead>
+                  <tr>
+                    <td>Team</td>
+                    <td>Team Members</td>
+                    <td>Project Title</td>
+                    <td>Status</td>
+                    <td>Download</td>
+                    <td>Marks</td>
+                    <td>Attendance</td>
+                    <td>Review</td>
+                    <td>Plagiarism check</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>03</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>04</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>05</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>06</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>07</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>08</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>09</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+
+                  <tr>
+                    <td>10</td>
+                    <td>
+                      <ul>
+                        <li>Varun Urs M S</li>
+                        <li>Satwik</li>
+                        <li>Aditya Basavaraj</li>
+                      </ul>
+                    </td>
+
+                    <td>Student Project Submission Portal</td>
+                    <td>Done</td>
+                    <td><button class="btn-hover color"><i class='bx bxs-download'>Download</i></button></td>
+                    <td>100</td>
+                    <td><button class="btn-hover color-1">Attendance</button></td>
+                    <td>Very Creatively done</td>
+                    <td><button class="btn-hover color">Check Now</button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>        
+      </div>
+  </div>
+  </section>
+<!-- linking the javascript files -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+  <script src="FDashboard.js"></script>
+</body>
+</html>
